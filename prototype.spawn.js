@@ -1,4 +1,4 @@
-var listOfRoles = ['harvester'];
+var listOfRoles = ['harvester', 'upgrader'];
 
 // create a new function for StructureSpawn
 StructureSpawn.prototype.spawnCreepsIfNecessary =
@@ -40,9 +40,6 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
             console.log(this.name + " spawned new creep: " + name + " (" + Game.creeps[name].memory.role + ")");
             for (let role of listOfRoles) {
                 console.log(role + ": " + numberOfCreeps[role]);
-            }
-            for (let roomName in numberOfLongDistanceHarvesters) {
-                console.log("LongDistanceHarvester" + roomName + ": " + numberOfLongDistanceHarvesters[roomName]);
             }
         }
     };

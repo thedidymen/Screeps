@@ -1,5 +1,6 @@
 var roles = {
-	harvester: require('role.harvester')
+	harvester: require('role.harvester'),
+	upgrader: require('role.upgrader')
 }
 
 Creep.prototype.runRole =
