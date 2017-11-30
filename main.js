@@ -1,8 +1,10 @@
 //import stuff
 require('prototype.creep');
 require('prototype.spawn');
+var n = 0
 
 module.exports.loop = function () {
+	//console.log('Round:', n++)
 
 	// removing dead creeps from memory
 	Object.keys(Memory.creeps).map(n=>{if(!Game.creeps[n]){
@@ -13,6 +15,7 @@ module.exports.loop = function () {
 
 	// creeps work!
     for (let name in Game.creeps) {
+    	Game.creeps[name].checkWorking()
         // run creep logic
         Game.creeps[name].runRole();
     }
