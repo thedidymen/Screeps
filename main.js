@@ -15,7 +15,7 @@ module.exports.loop = function () {
 
 	// creeps work!
     for (let name in Game.creeps) {
-    	Game.creeps[name].checkWorking()
+    	Game.creeps[name].checkWorking();
         // run creep logic
         Game.creeps[name].runRole();
     }

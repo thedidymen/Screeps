@@ -17,7 +17,7 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
         for (let role of listOfRoles) {
             numberOfCreeps[role] = _.sum(creepsInRoom, (c) => c.memory.role == role);
         }
-        let maxEnergy = room.energyCapacityAvailable;
+        let maxEnergy = room.energyAvailable;
         let name = undefined;
 
         // if no harvesters are left AND either no miners or no lorries are left

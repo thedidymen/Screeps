@@ -16,10 +16,10 @@ module.exports = {
 	            }
 	        }
 	        // if no constructionSite is found
-	        else {
+	        //else {
 	            // go upgrading the controller
-	            roleUpgrader.run(creep);
-	        }
+	        //    roleUpgrader.run(creep);
+	        //}
 	    }
         else if ( creep.memory.working == true ) {
             var sources = creep.room.find(FIND_SOURCES);

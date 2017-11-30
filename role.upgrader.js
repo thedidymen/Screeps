@@ -18,10 +18,10 @@ var roleUpgrader = {
                 creep.moveTo(creep.room.controller);
             }
         }
-        else {
+        //else {
             // go upgrading the controller
-            roleHarvester.run(creep);
-        }
+        //    roleHarvester.run(creep);
+        //}
     }
 };
 
